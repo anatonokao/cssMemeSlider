@@ -353,6 +353,8 @@ input[name='i'] {
    }
 }
 
+/* --------------TITLE ANIMATION--------------*/
+
 .title div {
    opacity: 0;
 }
@@ -439,19 +441,12 @@ input[name='i'] {
    }
 }
 
-
-
-
+/* --------------SLIDER ANIMATION-------------- */
 
 .slider {
    opacity: 0;
    box-shadow: none;
    animation: start-slider 1.5s ease 2s forwards;
-}
-
-.githubLink {
-   opacity: 0;
-   animation: start-title-gh 2s ease 2s forwards;
 }
 
 @keyframes start-slider {
@@ -470,6 +465,8 @@ input[name='i'] {
       box-shadow: 0 0 1em rgba(107, 141, 216, 0.616);
    }
 }
+
+/* --------------PAGINATION ANIMATION-------------- */
 
 .slider__navigation-btn {
    transform: translateY(5em);
@@ -499,7 +496,6 @@ input[name='i'] {
    animation: start-pagination 1s ease-in-out 3.5s forwards;
 }
 
-
 @keyframes start-pagination {
    0% {
       transform: translateY(5em);
@@ -510,6 +506,83 @@ input[name='i'] {
    }
 
    100% {
+      transform: translateY(0em);
+   }
+}
+
+/* --------------GITHUB ANIMATION-------------- */
+
+.githubLink {
+
+
+   opacity: 1;
+   animation: start-gh 2s ease forwards;
+}
+
+.gh-logo-circle {
+   opacity: 0;
+   stroke-dashoffset: 50;
+   stroke-dasharray: 100;
+   animation: start-gh-circle 3s ease 4s forwards;
+}
+
+
+@keyframes start-gh-circle {
+   0% {
+      fill: transparent;
+      stroke-dasharray: 15;
+      stroke-dashoffset: 300;
+   }
+
+   80% {
+      stroke: white;
+   }
+
+   100% {
+      stroke-dasharray: 15;
+      stroke-dashoffset: 0;
+      stroke: white;
+      opacity: 1;
+      stroke: transparent;
+   }
+}
+
+.gh-logo-cat {
+   opacity: 0;
+   animation: start-gh-cat 2s ease 5s forwards;
+}
+
+@keyframes start-gh-cat {
+   0% {
+      opacity: 1;
+      fill: transparent;
+   }
+
+   100% {
+      opacity: 1;
+      fill: white;
+   }
+}
+
+.gh-name {
+   opacity: 0;
+   animation: start-gh-name 1.5s ease-in-out 4s forwards;
+}
+
+@keyframes start-gh-name {
+   0% {
+      opacity: 1;
+
+      transform: translateY(5em);
+   }
+
+   60% {
+      opacity: 1;
+      transform: translateY(-.5em);
+   }
+
+   100% {
+      opacity: 1;
       transform: translateY(0em);
    }
 }
