@@ -299,7 +299,7 @@ input[name='i'] {
 
 /* --------------ACTIVE CONTROL-------------- */
 
-#slide1:checked~.slider__panel .slider__pagination .btn1 {
+#slide1:checked~.slider__panel .slider__pagination .btn1.btn1.btn1.btn1.btn1.btn1 {
    background-color: rgba(78, 78, 255, 0.562);
 }
 
@@ -468,5 +468,48 @@ input[name='i'] {
    100% {
       opacity: 1;
       box-shadow: 0 0 1em rgba(107, 141, 216, 0.616);
+   }
+}
+
+.slider__navigation-btn {
+   transform: translateY(5em);
+}
+
+.btn1 {
+   animation: start-pagination 1s ease-in-out 3s forwards;
+}
+
+.btn2 {
+   animation: start-pagination 1s ease-in-out 3.1s forwards;
+}
+
+.btn3 {
+   animation: start-pagination 1s ease-in-out 3.2s forwards;
+}
+
+.btn4 {
+   animation: start-pagination 1s ease-in-out 3.3s forwards;
+}
+
+.btn5 {
+   animation: start-pagination 1s ease-in-out 3.4s forwards;
+}
+
+.btn6 {
+   animation: start-pagination 1s ease-in-out 3.5s forwards;
+}
+
+
+@keyframes start-pagination {
+   0% {
+      transform: translateY(5em);
+   }
+
+   60% {
+      transform: translateY(-1.5em);
+   }
+
+   100% {
+      transform: translateY(0em);
    }
 }
