@@ -182,6 +182,32 @@ input[name='i'] {
    background-size: contain;
 }
 
+.slider__panel {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 1em;
+}
+
+.description {
+   color: #fff;
+   font-size: 1.5em;
+   font-weight: 300;
+   text-transform: capitalize;
+   display: flex;
+   align-items: center;
+   line-height: 150%;
+   flex: 1 1 auto;
+   overflow: hidden;
+}
+
+.slideDesc {
+   min-width: 100%;
+   white-space: nowrap;
+   transition: all .4s ease;
+   /* margin-top: 2rem; */
+}
+
 .slider__pagination {
    min-width: 1rem;
    min-height: 1rem;
