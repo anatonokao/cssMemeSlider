@@ -235,6 +235,28 @@ input[name='i'] {
    margin-left: -100%;
 }
 
+/* --------------CHANGE DESC-------------- */
+
+#slide1:checked~.slider__panel .description .slideDesc1 {
+   margin-left: 0;
+}
+
+#slide2:checked~.slider__panel .description .slideDesc1 {
+   margin-left: -100%;
+}
+
+#slide3:checked~.slider__panel .description .slideDesc1 {
+   margin-left: -200%;
+}
+
+#slide4:checked~.slider__panel .description .slideDesc1 {
+   margin-left: -300%;
+}
+
+#slide5:checked~.slider__panel .description .slideDesc1 {
+   margin-left: -400%;
+}
+
 /* --------------ACTIVE CONTROL-------------- */
 
 #slide1:checked~.slider__panel .slider__pagination .btn1 {
