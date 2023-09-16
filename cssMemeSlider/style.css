@@ -121,6 +121,16 @@ input[name='i'] {
    padding: 1% 10%;
 }
 
+.title {
+   color: white;
+   font-weight: 900;
+   font-size: 4em;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   line-height: 133%;
+   margin: 1% 0 3% 0;
+}
+
 .slider {
    background-color: #1f1f1f;
    height: 80%;
@@ -303,4 +313,27 @@ input[name='i'] {
 
 #slide5:checked~.slider__panel .slider__pagination .btn5 {
    background-color: rgba(78, 78, 255, 0.562);
+}
+
+.githubLink {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: .5em;
+   margin: 2em 0 1em 0;
+}
+
+.githubLink h2 {
+   color: rgba(255, 255, 255, 0.774);
+   font-size: 2em;
+   font-weight: 300;
+}
+
+
+@media (max-width: 768px) {
+   .slider__panel {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      gap: 1em;
+   }
 }
