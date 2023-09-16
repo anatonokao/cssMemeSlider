@@ -122,10 +122,11 @@ input[name='i'] {
 }
 
 .title {
+   display: flex;
    color: white;
    font-weight: 900;
    font-size: 4em;
-   letter-spacing: 0.1em;
+   /* letter-spacing: 0.1em; */
    text-transform: uppercase;
    line-height: 133%;
    margin: 1% 0 3% 0;
@@ -138,7 +139,6 @@ input[name='i'] {
    width: 100%;
    padding: 2em;
    border-radius: 2%;
-   box-shadow: 0 0 1em rgba(105, 105, 105, 0.616);
 }
 
 .slider__container {
@@ -350,5 +350,123 @@ input[name='i'] {
       font-size: .8em;
       margin: 1% 0 2%;
 
+   }
+}
+
+.title div {
+   opacity: 0;
+}
+
+.m {
+   animation: title 1s ease forwards;
+}
+
+.e {
+   animation: title 1.5s ease 1s forwards;
+}
+
+.m2 {
+   animation: title 1.7s ease .4s forwards;
+}
+
+.e2 {
+   animation: title 1.1s ease 2s forwards;
+}
+
+.s {
+   animation: title 2s ease .8s forwards;
+}
+
+.l {
+   animation: title 1.45s ease 1.5s forwards;
+}
+
+.i {
+   animation: title 1.12s ease 1s forwards;
+}
+
+.d {
+   animation: title 2s ease .3s forwards;
+}
+
+.e3 {
+   animation: title .5s ease 1s forwards;
+}
+
+.r {
+   animation: title 1s ease 2s forwards;
+}
+
+@keyframes title {
+   0% {
+      opacity: 0;
+   }
+
+   20% {
+      opacity: 80%;
+   }
+
+   30% {
+      opacity: 20%;
+   }
+
+   40% {
+      opacity: 90%;
+   }
+
+   50% {
+      opacity: 10%;
+   }
+
+   55% {
+      opacity: 80%;
+   }
+
+   60% {
+      opacity: 30%;
+   }
+
+   70% {
+      opacity: 80%;
+   }
+
+   80% {
+      opacity: 25%;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}
+
+
+
+
+
+.slider {
+   opacity: 0;
+   box-shadow: none;
+   animation: start-slider 1.5s ease 2s forwards;
+}
+
+.githubLink {
+   opacity: 0;
+   animation: start-title-gh 2s ease 2s forwards;
+}
+
+@keyframes start-slider {
+   0% {
+      opacity: 0;
+   }
+
+   70% {
+      opacity: 1;
+      box-shadow: none;
+
+   }
+
+   100% {
+      opacity: 1;
+      box-shadow: 0 0 1em rgba(107, 141, 216, 0.616);
    }
 }
