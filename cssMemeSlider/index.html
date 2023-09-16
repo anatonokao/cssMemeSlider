@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
    <title>Meme Slider</title>
 </head>
+
 <body>
-   
+   <div class="wrapper">
+      <div class="slider">
+         <div class="slider__container">
+            <input type="radio" id="slide1" name="i" checked>
+            <input type="radio" id="slide2" name="i">
+            <input type="radio" id="slide3" name="i">
+            <input type="radio" id="slide4" name="i">
+            <input type="radio" id="slide5" name="i">
+
+            <div class="slider__slides">
+               <div class="slider__slide slide1"></div>
+               <div class="slider__slide slide2"></div>
+               <div class="slider__slide slide3"></div>
+               <div class="slider__slide slide4"></div>
+               <div class="slider__slide slide5"></div>
+            </div>
+            <div class="slider__panel">
+               <div class="description">
+                  <div class="slideDesc1 slideDesc">OOOPS!</div>
+                  <div class="slideDesc2 slideDesc">They definitely won't notice me!</div>
+                  <div class="slideDesc3 slideDesc">Why?!</div>
+                  <div class="slideDesc4 slideDesc">How to fix it?!?!</div>
+                  <div class="slideDesc5 slideDesc">Do you want?</div>
+               </div>
+               <div class="slider__pagination">
+                  <label for="slide1" class="slider__navigation-btn btn1" tabindex="0"></label>
+                  <label for="slide2" class="slider__navigation-btn btn2" tabindex="0"></label>
+                  <label for="slide3" class="slider__navigation-btn btn3" tabindex="0"></label>
+                  <label for="slide4" class="slider__navigation-btn btn4" tabindex="0"></label>
+                  <label for="slide5" class="slider__navigation-btn btn5" tabindex="0"></label>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </body>
+
 </html>
