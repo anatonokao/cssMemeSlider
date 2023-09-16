@@ -213,3 +213,46 @@ input[name='i'] {
    background-color: rgba(62, 62, 102, 0.856);
 }
 
+/* --------------CHANGE SLIDE-------------- */
+
+#slide1:checked~.slider__slides .slide1 {
+   margin-left: 0%;
+}
+
+#slide2:checked~.slider__slides .slide1 {
+   margin-left: -25%;
+}
+
+#slide3:checked~.slider__slides .slide1 {
+   margin-left: -50%;
+}
+
+#slide4:checked~.slider__slides .slide1 {
+   margin-left: -75%;
+}
+
+#slide5:checked~.slider__slides .slide1 {
+   margin-left: -100%;
+}
+
+/* --------------ACTIVE CONTROL-------------- */
+
+#slide1:checked~.slider__panel .slider__pagination .btn1 {
+   background-color: rgba(78, 78, 255, 0.562);
+}
+
+#slide2:checked~.slider__panel .slider__pagination .btn2 {
+   background-color: rgba(78, 78, 255, 0.562);
+}
+
+#slide3:checked~.slider__panel .slider__pagination .btn3 {
+   background-color: rgba(78, 78, 255, 0.562);
+}
+
+#slide4:checked~.slider__panel .slider__pagination .btn4 {
+   background-color: rgba(78, 78, 255, 0.562);
+}
+
+#slide5:checked~.slider__panel .slider__pagination .btn5 {
+   background-color: rgba(78, 78, 255, 0.562);
+}
