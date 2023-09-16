@@ -135,7 +135,7 @@ input[name='i'] {
    background-color: #1f1f1f;
    height: 80%;
    overflow: hidden;
-   min-width: 100%;
+   width: 100%;
    padding: 2em;
    border-radius: 2%;
    box-shadow: 0 0 1em rgba(105, 105, 105, 0.616);
@@ -331,9 +331,20 @@ input[name='i'] {
 
 
 @media (max-width: 768px) {
+   .title {
+      font-size: 3em;
+      margin: 3% 0 1% 0;
+   }
+
    .slider__panel {
       flex-wrap: wrap-reverse;
       justify-content: center;
       gap: 1em;
+   }
+
+   .githubLink {
+      font-size: .8em;
+      margin: 1% 0 2%;
+
    }
 }
