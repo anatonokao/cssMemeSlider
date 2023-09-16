@@ -224,10 +224,14 @@ input[name='i'] {
    display: flex;
    justify-content: end;
    align-items: center;
-   gap: 1em;
    padding: 1rem;
    flex: 0 0 auto;
 
+}
+
+.slider__pagination label {
+   padding: 0.5em;
+   cursor: pointer;
 }
 
 .slider__navigation-btn {
@@ -241,11 +245,11 @@ input[name='i'] {
    padding: .7em;
 }
 
-.slider__navigation-btn:hover {
+.slider__pagination label:hover .slider__navigation-btn {
    background-color: rgba(135, 135, 223, 0.856);
 }
 
-.slider__navigation-btn:active {
+.slider__pagination label:active .slider__navigation-btn {
    background-color: rgba(62, 62, 102, 0.856);
 }
 
